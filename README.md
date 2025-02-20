@@ -1,5 +1,5 @@
 
-# 2025_02_21_InfiniSyncableNtpLoop  
+# Infini Syncable Ntp Loop  
 
 The idea is to create a game loop based on NTP time every N seconds.  
 
@@ -9,3 +9,11 @@ Instead, you provide the game with the next offset NTP reset time.
 
 It should allows to keep the headset sync on the device clock and need only once message to sync them all for the reste of the sessions.
 
+Why I am creating that ?
+
+I want kids to make a game triangulate in a room.
+That share the exact same timing.
+It won't be multiplayer network game.
+But they will be able to see the same event at the same time in the space space.
+
+But is is synchable with a simple IID message and an NTP server.
