@@ -17,3 +17,8 @@ It won't be multiplayer network game.
 But they will be able to see the same event at the same time in the space space.
 
 But is is synchable with a simple IID message and an NTP server.
+
+
+Required: 
+- NTP OFFSET: https://github.com/EloiStree/OpenUPM_UnityFetchOffsetNTP.git
+- TIME PCT : https://github.com/EloiStree/2025_02_17_TimePercentInterface

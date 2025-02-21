@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.elab.syncntploop",                              
+  "displayName": "Infini Syncable Ntp Loop",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Allows to make a game loop based on NTP Time and use a trigger to reset the offset start. Allowing to make the app ready if player want to start playing directly and not wait next loop. Or to reset time when someone die in one of the headset.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2025_02_21_InfiniSyncableNtpLoop.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
