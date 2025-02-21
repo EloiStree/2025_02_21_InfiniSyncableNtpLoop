@@ -342,7 +342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lastPercentReceived: 0
-  m_onPercentRelayed:
+  m_onDoublePercentRelayed:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2409180553336110080}
@@ -357,6 +357,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_onFloatPercentRelayed:
+    m_PersistentCalls:
+      m_Calls: []
   m_useOnValidate: 1
 --- !u!1 &6793635392545091601
 GameObject:
