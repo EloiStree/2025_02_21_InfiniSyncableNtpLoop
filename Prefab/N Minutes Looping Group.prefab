@@ -1028,133 +1028,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &9035055308171313981
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 845508390455505693}
-  - component: {fileID: 2992985015194632420}
-  m_Layer: 0
-  m_Name: Static Fetch Offset
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &845508390455505693
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9035055308171313981}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1603336451813963525}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2992985015194632420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9035055308171313981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7d0ab1617e960c429542a96ebffb853, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_serversNtp:
-  - raspberrypi.local
-  - be.pool.ntp.org
-  m_offsetInMilliseconds: 0
-  m_loadAtAwake: 1
-  m_timeInMilliseconds: 0
-  m_timeInSeconds: 0
-  m_loadedOk: 0
-  m_onNtpOffsetChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3689674948939281375}
-        m_TargetAssemblyTypeName: PctTimeMono_LoopingSince1970, be.elab.timepercent
-        m_MethodName: SetNtpOffsetToTimer
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 740409849851866997}
-        m_TargetAssemblyTypeName: UIPctTimeMono_NtpOffset, be.elab.timepercent
-        m_MethodName: SetTimeNtpOffset
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onMillisecondsChanged:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 613361697873323846}
-        m_TargetAssemblyTypeName: UIPctTimeMono_Timestamp, be.elab.timepercent
-        m_MethodName: SetToTimestampInMilliseconds
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onSecondsChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_onServerName:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7444744831172597697}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  m_onServerIpv4:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 217613533919459306}
-        m_TargetAssemblyTypeName: TMPro.TMP_Text, Unity.TextMeshPro
-        m_MethodName: set_text
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &9059386470597690853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,6 +1061,88 @@ Transform:
   - {fileID: 5032899512686753013}
   m_Father: {fileID: 1603336451813963525}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3338571004907180409
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1603336451813963525}
+    m_Modifications:
+    - target: {fileID: 566825321678442909, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_onServerIpv4.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 217613533919459306}
+    - target: {fileID: 566825321678442909, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_onServerName.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7444744831172597697}
+    - target: {fileID: 566825321678442909, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_onNtpOffsetChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3689674948939281375}
+    - target: {fileID: 566825321678442909, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_onNtpOffsetChanged.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 740409849851866997}
+    - target: {fileID: 566825321678442909, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_onMillisecondsChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 613361697873323846}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995991280480834116, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_Name
+      value: Static Fetch Offset
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+--- !u!4 &845508390455505693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2733445027804947044, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+  m_PrefabInstance: {fileID: 3338571004907180409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4193505618982903902
 PrefabInstance:
   m_ObjectHideFlags: 0
