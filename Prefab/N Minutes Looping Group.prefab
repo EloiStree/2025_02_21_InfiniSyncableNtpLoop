@@ -1070,6 +1070,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1603336451813963525}
     m_Modifications:
     - target: {fileID: 566825321678442909, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
+      propertyPath: m_serversNtp.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 566825321678442909, guid: 698c7c0473dd6c3439731314f1821ce4, type: 3}
       propertyPath: m_onServerIpv4.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 217613533919459306}
