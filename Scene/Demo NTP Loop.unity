@@ -572,30 +572,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: N Minutes Looping Group Demo
       objectReference: {fileID: 0}
-    - target: {fileID: 2992985015194632420, guid: 5b7e91bf81db6d84999f18fc164221b0, type: 3}
-      propertyPath: m_loadedOk
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2992985015194632420, guid: 5b7e91bf81db6d84999f18fc164221b0, type: 3}
-      propertyPath: m_offsetInMilliseconds
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2992985015194632420, guid: 5b7e91bf81db6d84999f18fc164221b0, type: 3}
-      propertyPath: m_serversNtp.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2992985015194632420, guid: 5b7e91bf81db6d84999f18fc164221b0, type: 3}
-      propertyPath: 'm_serversNtp.Array.data[0]'
-      value: raspberrypi.local
-      objectReference: {fileID: 0}
-    - target: {fileID: 2992985015194632420, guid: 5b7e91bf81db6d84999f18fc164221b0, type: 3}
-      propertyPath: 'm_serversNtp.Array.data[1]'
-      value: be.pool.ntp.org
-      objectReference: {fileID: 0}
-    - target: {fileID: 2992985015194632420, guid: 5b7e91bf81db6d84999f18fc164221b0, type: 3}
-      propertyPath: 'm_serversNtp.Array.data[2]'
-      value: be.pool.ntp.org
-      objectReference: {fileID: 0}
     - target: {fileID: 3458151675220036163, guid: 5b7e91bf81db6d84999f18fc164221b0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
